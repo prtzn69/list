@@ -1045,7 +1045,9 @@ export default class ListTabulator<Renderer extends ListRenderer> {
      */
     removeChildWrapperIfEmpty(currentItem);
 
-    focusItem(currentItem, false);
+    const isEmpty = this.renderer?.getItemContent(currentItem).trim().length === 0;
+
+    focusItem(currentItem, isEmpty);
   }
 
   /**
