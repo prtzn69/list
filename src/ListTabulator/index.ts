@@ -365,18 +365,15 @@ export default class ListTabulator<Renderer extends ListRenderer> {
   public pasteHandler(element: PasteEvent['detail']['data']): ListData {
     const { tagName: tag } = element;
     let style: ListDataStyle = 'unordered';
-    let tagToSearch: string;
 
     // set list style and tag to search.
     switch (tag) {
       case 'OL':
         style = 'ordered';
-        tagToSearch = 'ol';
         break;
       case 'UL':
       case 'LI':
         style = 'unordered';
-        tagToSearch = 'ul';
     }
 
     const data: ListData = {
@@ -400,11 +397,11 @@ export default class ListTabulator<Renderer extends ListRenderer> {
 
       return children.map((child) => {
         // get subitems if they exist.
-        const subItemsWrapper = child.querySelector(`:scope > ${tagToSearch}`);
+        const subItemsWrapper = child.querySelector(':scope > ol, :scope > ul');
         // get subitems.
         const subItems = subItemsWrapper ? getPastedItems(subItemsWrapper) : [];
         // get text content of the li element.
-        const content = child.innerHTML ?? '';
+        const content = child.firstChild?.textContent ?? '';
 
         return {
           content,
@@ -1048,7 +1045,9 @@ export default class ListTabulator<Renderer extends ListRenderer> {
      */
     removeChildWrapperIfEmpty(currentItem);
 
-    focusItem(currentItem, false);
+    const isEmpty = this.renderer?.getItemContent(currentItem).trim().length === 0;
+
+    focusItem(currentItem, isEmpty);
   }
 
   /**
