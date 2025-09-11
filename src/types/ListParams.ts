@@ -99,4 +99,14 @@ export interface ListConfig {
    * @default undefined // All counter types are available when not specified
    */
   counterTypes?: OlCounterType[];
+
+  /**
+   * Use checklists
+   */
+  checklists?: boolean;
+
+  /**
+   * Show list customization (starts with, list style, ...)
+   */
+  customization?: boolean;
 }

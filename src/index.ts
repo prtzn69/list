@@ -67,13 +67,6 @@ export default class EditorjsList {
           style: 'ordered',
         },
       },
-      {
-        icon: IconChecklist,
-        title: 'Checklist',
-        data: {
-          style: 'checklist',
-        },
-      },
     ];
   }
 
@@ -129,7 +122,11 @@ export default class EditorjsList {
    * Get list style name
    */
   private get listStyle(): ListDataStyle {
-    return this.data.style || this.defaultListStyle;
+    const listStyle = this.data.style || this.defaultListStyle;
+
+    return listStyle === 'checklist'
+      ? this.config?.checklists === true ? 'checklist' : 'unordered'
+      : listStyle;
   }
 
   /**
@@ -301,7 +298,10 @@ export default class EditorjsList {
           this.listStyle = 'ordered';
         },
       },
-      {
+    ];
+
+    if (this.config?.checklists === true) {
+      defaultTunes.push({
         label: this.api.i18n.t('Checklist'),
         icon: IconChecklist,
         closeOnActivate: true,
@@ -309,10 +309,10 @@ export default class EditorjsList {
         onActivate: () => {
           this.listStyle = 'checklist';
         },
-      },
-    ];
+      });
+    }
 
-    if (this.listStyle === 'ordered') {
+    if (this.config?.customization === true && this.listStyle === 'ordered') {
       const startWithElement = renderToolboxInput(
         (index: string) => this.changeStartWith(Number(index)),
         {
