@@ -38,7 +38,7 @@ function Pt() {
     return t.allInputsSelector;
   } });
 })(V);
-var k = {}, J = {};
+var _ = {}, J = {};
 Object.defineProperty(J, "__esModule", { value: !0 });
 J.isNativeInput = jt;
 function jt(e) {
@@ -54,7 +54,7 @@ function jt(e) {
   Object.defineProperty(e, "isNativeInput", { enumerable: !0, get: function() {
     return t.isNativeInput;
   } });
-})(k);
+})(_);
 var He = {}, Q = {};
 Object.defineProperty(Q, "__esModule", { value: !0 });
 Q.append = Tt;
@@ -152,7 +152,7 @@ function Nt(e) {
 })(ne);
 Object.defineProperty(te, "__esModule", { value: !0 });
 te.canSetCaret = Bt;
-var At = k, $t = ne;
+var At = _, $t = ne;
 function Bt(e) {
   var t = !0;
   if ((0, At.isNativeInput)(e))
@@ -232,32 +232,32 @@ function Ut(e, t, n) {
     window.clearTimeout(r), r = window.setTimeout(l, t), s && e.apply(a, i);
   };
 }
-function S(e) {
+function O(e) {
   return Object.prototype.toString.call(e).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
 }
 function zt(e) {
-  return S(e) === "boolean";
+  return O(e) === "boolean";
 }
 function Ue(e) {
-  return S(e) === "function" || S(e) === "asyncfunction";
+  return O(e) === "function" || O(e) === "asyncfunction";
 }
 function Kt(e) {
   return Ue(e) && /^\s*class\s+/.test(e.toString());
 }
 function Xt(e) {
-  return S(e) === "number";
+  return O(e) === "number";
 }
 function M(e) {
-  return S(e) === "object";
+  return O(e) === "object";
 }
 function Gt(e) {
   return Promise.resolve(e) === e;
 }
 function Vt(e) {
-  return S(e) === "string";
+  return O(e) === "string";
 }
 function Yt(e) {
-  return S(e) === "undefined";
+  return O(e) === "undefined";
 }
 function X(e, ...t) {
   if (!t.length)
@@ -359,7 +359,7 @@ const rn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   mouseButtons: en,
   notEmpty: ae,
   throttle: nn,
-  typeOf: S
+  typeOf: O
 }, Symbol.toStringTag, { value: "Module" })), le = /* @__PURE__ */ wt(rn);
 Object.defineProperty(ie, "__esModule", { value: !0 });
 ie.containsOnlyInlineElements = sn;
@@ -421,7 +421,7 @@ function cn(e) {
 var Ke = {}, ue = {};
 Object.defineProperty(ue, "__esModule", { value: !0 });
 ue.getContentLength = fn;
-var dn = k;
+var dn = _;
 function fn(e) {
   var t, n;
   return (0, dn.isNativeInput)(e) ? e.value.length : e.nodeType === Node.TEXT_NODE ? e.length : (n = (t = e.textContent) === null || t === void 0 ? void 0 : t.length) !== null && n !== void 0 ? n : 0;
@@ -502,7 +502,7 @@ function mn(e) {
 })(D);
 Object.defineProperty(fe, "__esModule", { value: !0 });
 fe.getDeepestNode = Ve;
-var gn = k, vn = W, bn = D;
+var gn = _, vn = W, bn = D;
 function Ve(e, t) {
   t === void 0 && (t = !1);
   var n = t ? "lastChild" : "firstChild", r = t ? "previousSibling" : "nextSibling";
@@ -534,7 +534,7 @@ var Ye = {}, me = {}, T = A && A.__spreadArray || function(e, t, n) {
 };
 Object.defineProperty(me, "__esModule", { value: !0 });
 me.findAllInputs = kn;
-var yn = $, Cn = ce, Sn = V, On = k;
+var yn = $, Cn = ce, Sn = V, On = _;
 function kn(e) {
   return Array.from(e.querySelectorAll((0, Sn.allInputsSelector)())).reduce(function(t, n) {
     return (0, On.isNativeInput)(n) || (0, yn.containsOnlyInlineElements)(n) ? T(T([], t, !0), [n], !1) : T(T([], t, !0), (0, Cn.getDeepestBlockElements)(n), !0);
@@ -590,7 +590,7 @@ function wn(e) {
 var Oe = {}, ke = {};
 Object.defineProperty(ke, "__esModule", { value: !0 });
 ke.isNodeEmpty = Mn;
-var Pn = W, jn = ve, Tn = k, Ln = D;
+var Pn = W, jn = ve, Tn = _, Ln = D;
 function Mn(e, t) {
   var n = "";
   return (0, Ln.isSingleTag)(e) && !(0, Pn.isLineBreakTag)(e) ? !1 : ((0, jn.isElement)(e) && (0, Tn.isNativeInput)(e) ? n = e.value : e.textContent !== null && (n = e.textContent.replace("​", "")), t !== void 0 && (n = n.replace(new RegExp(t, "g"), "")), n.trim().length === 0);
@@ -693,7 +693,7 @@ function Rn(e, t) {
   Object.defineProperty(e, "allInputsSelector", { enumerable: !0, get: function() {
     return t.allInputsSelector;
   } });
-  var n = k;
+  var n = _;
   Object.defineProperty(e, "isNativeInput", { enumerable: !0, get: function() {
     return n.isNativeInput;
   } });
@@ -737,13 +737,13 @@ function Rn(e, t) {
   Object.defineProperty(e, "findAllInputs", { enumerable: !0, get: function() {
     return g.findAllInputs;
   } });
-  var w = Je;
+  var C = Je;
   Object.defineProperty(e, "isCollapsedWhitespaces", { enumerable: !0, get: function() {
-    return w.isCollapsedWhitespaces;
+    return C.isCollapsedWhitespaces;
   } });
-  var _ = ne;
+  var E = ne;
   Object.defineProperty(e, "isContentEditable", { enumerable: !0, get: function() {
-    return _.isContentEditable;
+    return E.isContentEditable;
   } });
   var ot = ve;
   Object.defineProperty(e, "isElement", { enumerable: !0, get: function() {
@@ -922,7 +922,7 @@ class b {
     return {};
   }
 }
-function O(e) {
+function k(e) {
   return e.nodeType === Node.ELEMENT_NODE;
 }
 var j = {}, Pe = {}, H = {}, F = {};
@@ -978,10 +978,10 @@ function Vn(e, t) {
     var a = document.createRange(), l = window.getSelection();
     if (!l)
       return;
-    var s = function(g, w) {
-      w === void 0 && (w = !1);
-      var _ = document.createTextNode("");
-      w ? g.insertBefore(_, g.firstChild) : g.appendChild(_), a.setStart(_, 0), a.setEnd(_, 0);
+    var s = function(g, C) {
+      C === void 0 && (C = !1);
+      var E = document.createTextNode("");
+      C ? g.insertBefore(E, g.firstChild) : g.appendChild(E), a.setStart(E, 0), a.setEnd(E, 0);
     }, o = function(g) {
       return g != null;
     }, u = e.childNodes, c = t ? u[0] : u[u.length - 1];
@@ -1250,17 +1250,17 @@ function lr(e) {
 function sr(e) {
   return e.querySelector(`.${p.itemChildren}`) !== null;
 }
-function C(e) {
+function S(e) {
   return e.querySelector(`.${p.itemChildren}`);
 }
 function z(e) {
   let t = e;
-  e.classList.contains(p.item) && (t = C(e)), t !== null && y(t).length === 0 && t.remove();
+  e.classList.contains(p.item) && (t = S(e)), t !== null && y(t).length === 0 && t.remove();
 }
 function N(e) {
   return e.querySelector(`.${p.itemContent}`);
 }
-function E(e, t = !0) {
+function I(e, t = !0) {
   const n = N(e);
   n && j.focus(n, t);
 }
@@ -1274,7 +1274,7 @@ class K {
     if (!t)
       return null;
     let n = t.anchorNode;
-    return !n || (O(n) || (n = n.parentNode), !n) || !O(n) ? null : n.closest(`.${p.item}`);
+    return !n || (k(n) || (n = n.parentNode), !n) || !k(n) ? null : n.closest(`.${p.item}`);
   }
   /**
    * Method that returns nesting level of the current item, null if there is no selection
@@ -1285,7 +1285,7 @@ class K {
       return null;
     let n = t.parentNode, r = 0;
     for (; n !== null && n !== this.listWrapper; )
-      O(n) && n.classList.contains(p.item) && (r += 1), n = n.parentNode;
+      k(n) && n.classList.contains(p.item) && (r += 1), n = n.parentNode;
     return r + 1;
   }
   /**
@@ -1339,7 +1339,7 @@ class K {
    */
   save(t) {
     const n = t ?? this.listWrapper, r = (l) => y(l).map((o) => {
-      const u = C(o), c = this.renderer.getItemContent(o), h = this.renderer.getItemMeta(o), g = u ? r(u) : [];
+      const u = S(o), c = this.renderer.getItemContent(o), h = this.renderer.getItemMeta(o), g = u ? r(u) : [];
       return {
         content: c,
         meta: h,
@@ -1382,7 +1382,7 @@ class K {
     if (a.length === 0)
       return;
     const l = a[a.length - 1];
-    let s = C(l);
+    let s = S(l);
     const o = t.items.shift();
     o !== void 0 && (o.items.length !== 0 && (s === null && (s = this.renderer.renderWrapper(!1)), this.appendItems(o.items, s)), t.items.length > 0 && this.appendItems(t.items, this.listWrapper));
   }
@@ -1420,10 +1420,10 @@ class K {
     };
     r === "ordered" && (this.data.meta.counterType = "numeric", this.data.meta.start = 1);
     const a = (l) => Array.from(l.querySelectorAll(":scope > li")).map((o) => {
-      var g;
+      var g, C;
       const u = o.querySelector(":scope > ol, :scope > ul"), c = u ? a(u) : [];
       return {
-        content: ((g = o.firstChild) == null ? void 0 : g.textContent) ?? "",
+        content: ((C = (g = o.firstChild) == null ? void 0 : g.textContent) == null ? void 0 : C.trim()) ?? "",
         meta: {},
         items: c
       };
@@ -1495,18 +1495,18 @@ class K {
    * @param item - list item to be unshifted
    */
   unshiftItem(t) {
-    if (!t.parentNode || !O(t.parentNode))
+    if (!t.parentNode || !k(t.parentNode))
       return;
     const n = t.parentNode.closest(`.${p.item}`);
     if (!n)
       return;
-    let r = C(t);
+    let r = S(t);
     if (t.parentElement === null)
       return;
     const i = U(t);
     i !== null && (r === null && (r = this.renderer.renderWrapper(!1)), i.forEach((a) => {
       r.appendChild(a);
-    }), t.appendChild(r)), n.after(t), E(t, !1), z(n);
+    }), t.appendChild(r)), n.after(t), I(t, !1), z(n);
   }
   /**
    * Method that is used for list splitting and moving trailing items to the new separated list
@@ -1516,7 +1516,7 @@ class K {
     const n = y(t), r = this.block, i = this.api.blocks.getCurrentBlockIndex();
     if (n.length !== 0) {
       const o = n[0];
-      this.unshiftItem(o), E(t, !1);
+      this.unshiftItem(o), I(t, !1);
     }
     if (t.previousElementSibling === null && t.parentNode === this.listWrapper) {
       this.convertItemToDefaultBlock(i);
@@ -1543,8 +1543,8 @@ class K {
     const i = N(t);
     let a;
     i === null ? a = "" : a = j.getContenteditableSlice(i, n, r, "right", !0);
-    const l = C(t), s = this.renderItem(a);
-    t == null || t.after(s), l && s.appendChild(l), E(s);
+    const l = S(t), s = this.renderItem(a);
+    t == null || t.after(s), l && s.appendChild(l), I(s);
   }
   /**
    * Method that is used for merging current item with previous one
@@ -1554,10 +1554,10 @@ class K {
    */
   mergeItemWithPrevious(t) {
     const n = t.previousElementSibling, r = t.parentNode;
-    if (r === null || !O(r))
+    if (r === null || !k(r))
       return;
     const i = r.closest(`.${p.item}`);
-    if (!n && !i || n && !O(n))
+    if (!n && !i || n && !k(n))
       return;
     let a;
     if (n) {
@@ -1568,7 +1568,7 @@ class K {
     const l = this.renderer.getItemContent(t);
     if (!a)
       return;
-    E(a, !1);
+    I(a, !1);
     const s = N(a);
     if (s === null)
       return;
@@ -1578,12 +1578,12 @@ class K {
       t.remove(), z(a);
       return;
     }
-    const u = n || i, c = C(u) ?? this.renderer.renderWrapper(!1);
+    const u = n || i, c = S(u) ?? this.renderer.renderWrapper(!1);
     n ? o.forEach((h) => {
       c.appendChild(h);
     }) : o.forEach((h) => {
       c.prepend(h);
-    }), C(u) === null && a.appendChild(c), t.remove();
+    }), S(u) === null && a.appendChild(c), t.remove();
   }
   /**
    * Add indentation to current item
@@ -1601,9 +1601,9 @@ class K {
         return;
     }
     const r = n.previousSibling;
-    if (r === null || !O(r))
+    if (r === null || !k(r))
       return;
-    const i = C(r);
+    const i = S(r);
     if (i)
       i.appendChild(n), y(n).forEach((u) => {
         i.appendChild(u);
@@ -1616,7 +1616,7 @@ class K {
     }
     z(n);
     const a = ((s = this.renderer) == null ? void 0 : s.getItemContent(n).trim().length) === 0;
-    E(n, a);
+    I(n, a);
   }
   /**
    * Convert current item to default block with passed index
@@ -1640,7 +1640,7 @@ class K {
     const n = y(t);
     if (n.length !== 0) {
       const l = n[0];
-      this.unshiftItem(l), E(t);
+      this.unshiftItem(l), I(t);
     }
     const r = U(t), i = this.api.blocks.getCurrentBlockIndex(), a = r === null;
     this.convertItemToDefaultBlock(i, a);
@@ -1678,13 +1678,13 @@ class K {
     });
   }
 }
-const I = {
+const w = {
   wrapper: `${m}-start-with-field`,
   input: `${m}-start-with-field__input`,
   startWithElementWrapperInvalid: `${m}-start-with-field--invalid`
 };
 function or(e, { value: t, placeholder: n, attributes: r, sanitize: i }) {
-  const a = d.make("div", I.wrapper), l = d.make("input", I.input, {
+  const a = d.make("div", w.wrapper), l = d.make("input", w.input, {
     placeholder: n,
     /**
      * Used to prevent focusing on the input by Tab key
@@ -1702,7 +1702,7 @@ function or(e, { value: t, placeholder: n, attributes: r, sanitize: i }) {
   return a.appendChild(l), l.addEventListener("input", () => {
     i !== void 0 && (l.value = i(l.value));
     const s = l.checkValidity();
-    !s && !a.classList.contains(I.startWithElementWrapperInvalid) && a.classList.add(I.startWithElementWrapperInvalid), s && a.classList.contains(I.startWithElementWrapperInvalid) && a.classList.remove(I.startWithElementWrapperInvalid), s && e(l.value);
+    !s && !a.classList.contains(w.startWithElementWrapperInvalid) && a.classList.add(w.startWithElementWrapperInvalid), s && a.classList.contains(w.startWithElementWrapperInvalid) && a.classList.remove(w.startWithElementWrapperInvalid), s && e(l.value);
   }), a;
 }
 const P = /* @__PURE__ */ new Map([
