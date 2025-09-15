@@ -52,7 +52,22 @@ export default class EditorjsList {
    * title - title to show in toolbox
    */
   public static get toolbox(): ToolboxConfig {
-    return [];
+    return [
+      {
+        icon: IconListBulleted,
+        title: 'Unordered List',
+        data: {
+          style: 'unordered',
+        },
+      },
+      {
+        icon: IconListNumbered,
+        title: 'Ordered List',
+        data: {
+          style: 'ordered',
+        },
+      },
+    ];
   }
 
   /**
@@ -226,9 +241,11 @@ export default class EditorjsList {
    * @returns - string of the recursively merged contents of the items of the list
    */
   private static joinRecursive(data: ListData | ListItem): string {
+    console.log('data', data);
+
     return data.items
-      .map(item => `${item.content} ${EditorjsList.joinRecursive(item)}`)
-      .join('');
+      .map(item => `${item.content}: ${EditorjsList.joinRecursive(item)}`)
+      .join('__ITEMS__');
   }
 
   /**
