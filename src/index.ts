@@ -52,22 +52,7 @@ export default class EditorjsList {
    * title - title to show in toolbox
    */
   public static get toolbox(): ToolboxConfig {
-    return [
-      {
-        icon: IconListBulleted,
-        title: 'Unordered List',
-        data: {
-          style: 'unordered',
-        },
-      },
-      {
-        icon: IconListNumbered,
-        title: 'Ordered List',
-        data: {
-          style: 'ordered',
-        },
-      },
-    ];
+    return [];
   }
 
   /**
