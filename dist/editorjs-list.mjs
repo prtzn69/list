@@ -1,5 +1,5 @@
 (function(){"use strict";try{if(typeof document<"u"){var e=document.createElement("style");e.appendChild(document.createTextNode('.cdx-list{margin:0;padding:0;outline:none;display:grid;counter-reset:item;gap:var(--spacing-s);padding:var(--spacing-xs);--spacing-s: 8px;--spacing-xs: 6px;--list-counter-type: numeric;--radius-border: 5px;--checkbox-background: #fff;--color-border: #C9C9C9;--color-bg-checked: #369FFF;--line-height: 1.45em;--color-bg-checked-hover: #0059AB;--color-tick: #fff;--size-checkbox: 1.2em}.cdx-list__item{line-height:var(--line-height);display:grid;grid-template-columns:auto 1fr;grid-template-rows:auto auto;grid-template-areas:"checkbox content" ". child"}.cdx-list__item-children{display:grid;grid-area:child;gap:var(--spacing-s);padding-top:var(--spacing-s)}.cdx-list__item [contenteditable]{outline:none}.cdx-list__item-content{word-break:break-word;white-space:pre-wrap;grid-area:content;padding-left:var(--spacing-s)}.cdx-list__item:before{counter-increment:item;white-space:nowrap}.cdx-list-ordered .cdx-list__item:before{content:counters(item,".",var(--list-counter-type)) "."}.cdx-list-ordered{counter-reset:item}.cdx-list-unordered .cdx-list__item:before{content:"•"}.cdx-list-checklist .cdx-list__item:before{content:""}.cdx-list__settings .cdx-settings-button{width:50%}.cdx-list__checkbox{padding-top:calc((var(--line-height) - var(--size-checkbox)) / 2);grid-area:checkbox;width:var(--size-checkbox);height:var(--size-checkbox);display:flex;cursor:pointer}.cdx-list__checkbox svg{opacity:0;height:var(--size-checkbox);width:var(--size-checkbox);left:-1px;top:-1px;position:absolute}@media (hover: hover){.cdx-list__checkbox:not(.cdx-list__checkbox--no-hover):hover .cdx-list__checkbox-check svg{opacity:1}}.cdx-list__checkbox--checked{line-height:var(--line-height)}@media (hover: hover){.cdx-list__checkbox--checked:not(.cdx-list__checkbox--checked--no-hover):hover .cdx-checklist__checkbox-check{background:var(--color-bg-checked-hover);border-color:var(--color-bg-checked-hover)}}.cdx-list__checkbox--checked .cdx-list__checkbox-check{background:var(--color-bg-checked);border-color:var(--color-bg-checked)}.cdx-list__checkbox--checked .cdx-list__checkbox-check svg{opacity:1}.cdx-list__checkbox--checked .cdx-list__checkbox-check svg path{stroke:var(--color-tick)}.cdx-list__checkbox--checked .cdx-list__checkbox-check:before{opacity:0;visibility:visible;transform:scale(2.5)}.cdx-list__checkbox-check{cursor:pointer;display:inline-block;position:relative;margin:0 auto;width:var(--size-checkbox);height:var(--size-checkbox);box-sizing:border-box;border-radius:var(--radius-border);border:1px solid var(--color-border);background:var(--checkbox-background)}.cdx-list__checkbox-check:before{content:"";position:absolute;top:0;right:0;bottom:0;left:0;border-radius:100%;background-color:var(--color-bg-checked);visibility:hidden;pointer-events:none;transform:scale(1);transition:transform .4s ease-out,opacity .4s}.cdx-list-start-with-field{background:#F8F8F8;border:1px solid rgba(226,226,229,.2);border-radius:6px;padding:2px;display:grid;grid-template-columns:auto auto 1fr;grid-template-rows:auto}.cdx-list-start-with-field--invalid{background:#FFECED;border:1px solid #E13F3F}.cdx-list-start-with-field--invalid .cdx-list-start-with-field__input{color:#e13f3f}.cdx-list-start-with-field__input{font-size:14px;outline:none;font-weight:500;font-family:inherit;border:0;background:transparent;margin:0;padding:0;line-height:22px;min-width:calc(100% - var(--toolbox-buttons-size) - var(--icon-margin-right))}.cdx-list-start-with-field__input::placeholder{color:var(--grayText);font-weight:500}')),document.head.appendChild(e)}}catch(c){console.error("vite-plugin-css-injected-by-js",c)}})();
-const yt = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M7 12L10.4884 15.8372C10.5677 15.9245 10.705 15.9245 10.7844 15.8372L17 9"/></svg>', Ct = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9.2 12L11.0586 13.8586C11.1367 13.9367 11.2633 13.9367 11.3414 13.8586L14.7 10.5"/><rect width="14" height="14" x="5" y="5" stroke="currentColor" stroke-width="2" rx="4"/></svg>', Ae = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><line x1="9" x2="19" y1="7" y2="7" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><line x1="9" x2="19" y1="12" y2="12" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><line x1="9" x2="19" y1="17" y2="17" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5.00001 17H4.99002"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5.00001 12H4.99002"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5.00001 7H4.99002"/></svg>', $e = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><line x1="12" x2="19" y1="7" y2="7" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><line x1="12" x2="19" y1="12" y2="12" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><line x1="12" x2="19" y1="17" y2="17" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M7.79999 14L7.79999 7.2135C7.79999 7.12872 7.7011 7.0824 7.63597 7.13668L4.79999 9.5"/></svg>', St = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 14.2L10 7.4135C10 7.32872 9.90111 7.28241 9.83598 7.33668L7 9.7" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M13.2087 14.2H13.2" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg>', Ot = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.2087 14.2H13.2" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M10 14.2L10 9.5" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M10 7.01L10 7" stroke="black" stroke-width="1.8" stroke-linecap="round"/></svg>', kt = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.2087 14.2H13.2" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M10 14.2L10 7.2" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg>', _t = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.0087 14.2H16" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M7 14.2L7.78865 12M13 14.2L12.1377 12M7.78865 12C7.78865 12 9.68362 7 10 7C10.3065 7 12.1377 12 12.1377 12M7.78865 12L12.1377 12" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg>', Et = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.2087 14.2H14.2" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M11.5 14.5C11.5 14.5 11 13.281 11 12.5M7 9.5C7 9.5 7.5 8.5 9 8.5C10.5 8.5 11 9.5 11 10.5L11 11.5M11 11.5L11 12.5M11 11.5C11 11.5 7 11 7 13C7 15.3031 11 15 11 12.5" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg>', It = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14.2L8 7.4135C8 7.32872 7.90111 7.28241 7.83598 7.33668L5 9.7" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M14 13L16.4167 10.7778M16.4167 10.7778L14 8.5M16.4167 10.7778H11.6562" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const vt = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M7 12L10.4884 15.8372C10.5677 15.9245 10.705 15.9245 10.7844 15.8372L17 9"/></svg>', bt = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M9.2 12L11.0586 13.8586C11.1367 13.9367 11.2633 13.9367 11.3414 13.8586L14.7 10.5"/><rect width="14" height="14" x="5" y="5" stroke="currentColor" stroke-width="2" rx="4"/></svg>', yt = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><line x1="9" x2="19" y1="7" y2="7" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><line x1="9" x2="19" y1="12" y2="12" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><line x1="9" x2="19" y1="17" y2="17" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5.00001 17H4.99002"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5.00001 12H4.99002"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5.00001 7H4.99002"/></svg>', Ct = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><line x1="12" x2="19" y1="7" y2="7" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><line x1="12" x2="19" y1="12" y2="12" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><line x1="12" x2="19" y1="17" y2="17" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M7.79999 14L7.79999 7.2135C7.79999 7.12872 7.7011 7.0824 7.63597 7.13668L4.79999 9.5"/></svg>', St = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 14.2L10 7.4135C10 7.32872 9.90111 7.28241 9.83598 7.33668L7 9.7" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M13.2087 14.2H13.2" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg>', Ot = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.2087 14.2H13.2" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M10 14.2L10 9.5" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M10 7.01L10 7" stroke="black" stroke-width="1.8" stroke-linecap="round"/></svg>', kt = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.2087 14.2H13.2" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M10 14.2L10 7.2" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg>', _t = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.0087 14.2H16" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M7 14.2L7.78865 12M13 14.2L12.1377 12M7.78865 12C7.78865 12 9.68362 7 10 7C10.3065 7 12.1377 12 12.1377 12M7.78865 12L12.1377 12" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg>', Et = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.2087 14.2H14.2" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M11.5 14.5C11.5 14.5 11 13.281 11 12.5M7 9.5C7 9.5 7.5 8.5 9 8.5C10.5 8.5 11 9.5 11 10.5L11 11.5M11 11.5L11 12.5M11 11.5C11 11.5 7 11 7 13C7 15.3031 11 15 11 12.5" stroke="black" stroke-width="1.6" stroke-linecap="round"/></svg>', It = '<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 14.2L8 7.4135C8 7.32872 7.90111 7.28241 7.83598 7.33668L5 9.7" stroke="black" stroke-width="1.6" stroke-linecap="round"/><path d="M14 13L16.4167 10.7778M16.4167 10.7778L14 8.5M16.4167 10.7778H11.6562" stroke="black" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 var A = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : typeof global < "u" ? global : typeof self < "u" ? self : {};
 function wt(e) {
   if (e.__esModule)
@@ -55,7 +55,7 @@ function jt(e) {
     return t.isNativeInput;
   } });
 })(_);
-var He = {}, Q = {};
+var We = {}, Q = {};
 Object.defineProperty(Q, "__esModule", { value: !0 });
 Q.append = Tt;
 function Tt(e, t) {
@@ -69,11 +69,11 @@ function Tt(e, t) {
   Object.defineProperty(e, "append", { enumerable: !0, get: function() {
     return t.append;
   } });
-})(He);
+})(We);
 var Z = {}, x = {};
 Object.defineProperty(x, "__esModule", { value: !0 });
-x.blockElements = Lt;
-function Lt() {
+x.blockElements = Mt;
+function Mt() {
   return [
     "address",
     "article",
@@ -123,10 +123,10 @@ function Lt() {
     return t.blockElements;
   } });
 })(Z);
-var Fe = {}, ee = {};
+var De = {}, ee = {};
 Object.defineProperty(ee, "__esModule", { value: !0 });
-ee.calculateBaseline = Mt;
-function Mt(e) {
+ee.calculateBaseline = Lt;
+function Lt(e) {
   var t = window.getComputedStyle(e), n = parseFloat(t.fontSize), r = parseFloat(t.lineHeight) || n * 1.2, i = parseFloat(t.paddingTop), a = parseFloat(t.borderTopWidth), l = parseFloat(t.marginTop), s = n * 0.8, o = (r - n) / 2, u = l + a + i + o + s;
   return u;
 }
@@ -136,8 +136,8 @@ function Mt(e) {
   Object.defineProperty(e, "calculateBaseline", { enumerable: !0, get: function() {
     return t.calculateBaseline;
   } });
-})(Fe);
-var Re = {}, te = {}, ne = {}, re = {};
+})(De);
+var He = {}, te = {}, ne = {}, re = {};
 Object.defineProperty(re, "__esModule", { value: !0 });
 re.isContentEditable = Nt;
 function Nt(e) {
@@ -178,7 +178,7 @@ function Bt(e) {
   Object.defineProperty(e, "canSetCaret", { enumerable: !0, get: function() {
     return t.canSetCaret;
   } });
-})(Re);
+})(He);
 var $ = {}, ie = {};
 function Wt(e, t, n) {
   const r = n.value !== void 0 ? "value" : "get", i = n[r], a = `#${t}Cache`;
@@ -192,7 +192,7 @@ function Wt(e, t, n) {
   }
   return n;
 }
-function qe() {
+function Fe() {
   const e = {
     win: !1,
     mac: !1,
@@ -209,7 +209,7 @@ function Dt(e) {
 }
 const Ht = () => typeof window < "u" && window.navigator !== null && ae(window.navigator.platform) && (/iP(ad|hone|od)/.test(window.navigator.platform) || window.navigator.platform === "MacIntel" && window.navigator.maxTouchPoints > 1);
 function Ft(e) {
-  const t = qe();
+  const t = Fe();
   return e = e.replace(/shift/gi, "⇧").replace(/backspace/gi, "⌫").replace(/enter/gi, "⏎").replace(/up/gi, "↑").replace(/left/gi, "→").replace(/down/gi, "↓").replace(/right/gi, "←").replace(/escape/gi, "⎋").replace(/insert/gi, "Ins").replace(/delete/gi, "␡").replace(/\+/gi, "+"), t.mac ? e = e.replace(/ctrl|cmd/gi, "⌘").replace(/alt/gi, "⌥") : e = e.replace(/cmd/gi, "Ctrl").replace(/windows/gi, "WIN"), e;
 }
 function Rt(e) {
@@ -238,16 +238,16 @@ function O(e) {
 function zt(e) {
   return O(e) === "boolean";
 }
-function Ue(e) {
+function Re(e) {
   return O(e) === "function" || O(e) === "asyncfunction";
 }
 function Kt(e) {
-  return Ue(e) && /^\s*class\s+/.test(e.toString());
+  return Re(e) && /^\s*class\s+/.test(e.toString());
 }
 function Xt(e) {
   return O(e) === "number";
 }
-function M(e) {
+function L(e) {
   return O(e) === "object";
 }
 function Gt(e) {
@@ -263,9 +263,9 @@ function X(e, ...t) {
   if (!t.length)
     return e;
   const n = t.shift();
-  if (M(e) && M(n))
+  if (L(e) && L(n))
     for (const r in n)
-      M(n[r]) ? (e[r] === void 0 && Object.assign(e, { [r]: {} }), X(e[r], n[r])) : Object.assign(e, { [r]: n[r] });
+      L(n[r]) ? (e[r] === void 0 && Object.assign(e, { [r]: {} }), X(e[r], n[r])) : Object.assign(e, { [r]: n[r] });
   return X(e, ...t);
 }
 function Jt(e, t, n) {
@@ -342,15 +342,15 @@ const rn = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   debounce: Ut,
   deepMerge: X,
   deprecationAssert: Jt,
-  getUserOS: qe,
+  getUserOS: Fe,
   getValidUrl: Qt,
   isBoolean: zt,
   isClass: Kt,
   isEmpty: Dt,
-  isFunction: Ue,
+  isFunction: Re,
   isIosDevice: Ht,
   isNumber: Xt,
-  isObject: M,
+  isObject: L,
   isPrintableKey: Zt,
   isPromise: Gt,
   isString: Vt,
@@ -379,7 +379,7 @@ function sn(e) {
     return t.containsOnlyInlineElements;
   } });
 })($);
-var ze = {}, se = {}, B = {}, oe = {};
+var qe = {}, se = {}, B = {}, oe = {};
 Object.defineProperty(oe, "__esModule", { value: !0 });
 oe.make = on;
 function on(e, t, n) {
@@ -417,8 +417,8 @@ function cn(e) {
   Object.defineProperty(e, "fragmentToString", { enumerable: !0, get: function() {
     return t.fragmentToString;
   } });
-})(ze);
-var Ke = {}, ue = {};
+})(qe);
+var Ue = {}, ue = {};
 Object.defineProperty(ue, "__esModule", { value: !0 });
 ue.getContentLength = fn;
 var dn = _;
@@ -432,19 +432,19 @@ function fn(e) {
   Object.defineProperty(e, "getContentLength", { enumerable: !0, get: function() {
     return t.getContentLength;
   } });
-})(Ke);
-var ce = {}, de = {}, Be = A && A.__spreadArray || function(e, t, n) {
+})(Ue);
+var ce = {}, de = {}, Ae = A && A.__spreadArray || function(e, t, n) {
   if (n || arguments.length === 2)
     for (var r = 0, i = t.length, a; r < i; r++)
       (a || !(r in t)) && (a || (a = Array.prototype.slice.call(t, 0, r)), a[r] = t[r]);
   return e.concat(a || Array.prototype.slice.call(t));
 };
 Object.defineProperty(de, "__esModule", { value: !0 });
-de.getDeepestBlockElements = Xe;
+de.getDeepestBlockElements = ze;
 var pn = $;
-function Xe(e) {
+function ze(e) {
   return (0, pn.containsOnlyInlineElements)(e) ? [e] : Array.from(e.children).reduce(function(t, n) {
-    return Be(Be([], t, !0), Xe(n), !0);
+    return Ae(Ae([], t, !0), ze(n), !0);
   }, []);
 }
 (function(e) {
@@ -454,7 +454,7 @@ function Xe(e) {
     return t.getDeepestBlockElements;
   } });
 })(ce);
-var Ge = {}, fe = {}, W = {}, pe = {};
+var Ke = {}, fe = {}, W = {}, pe = {};
 Object.defineProperty(pe, "__esModule", { value: !0 });
 pe.isLineBreakTag = hn;
 function hn(e) {
@@ -501,9 +501,9 @@ function mn(e) {
   } });
 })(D);
 Object.defineProperty(fe, "__esModule", { value: !0 });
-fe.getDeepestNode = Ve;
+fe.getDeepestNode = Xe;
 var gn = _, vn = W, bn = D;
-function Ve(e, t) {
+function Xe(e, t) {
   t === void 0 && (t = !1);
   var n = t ? "lastChild" : "firstChild", r = t ? "previousSibling" : "nextSibling";
   if (e.nodeType === Node.ELEMENT_NODE && e[n]) {
@@ -515,7 +515,7 @@ function Ve(e, t) {
         i = i.parentNode[r];
       else
         return i.parentNode;
-    return Ve(i, t);
+    return Xe(i, t);
   }
   return e;
 }
@@ -525,8 +525,8 @@ function Ve(e, t) {
   Object.defineProperty(e, "getDeepestNode", { enumerable: !0, get: function() {
     return t.getDeepestNode;
   } });
-})(Ge);
-var Ye = {}, me = {}, T = A && A.__spreadArray || function(e, t, n) {
+})(Ke);
+var Ge = {}, me = {}, T = A && A.__spreadArray || function(e, t, n) {
   if (n || arguments.length === 2)
     for (var r = 0, i = t.length, a; r < i; r++)
       (a || !(r in t)) && (a || (a = Array.prototype.slice.call(t, 0, r)), a[r] = t[r]);
@@ -546,8 +546,8 @@ function kn(e) {
   Object.defineProperty(e, "findAllInputs", { enumerable: !0, get: function() {
     return t.findAllInputs;
   } });
-})(Ye);
-var Je = {}, ge = {};
+})(Ge);
+var Ve = {}, ge = {};
 Object.defineProperty(ge, "__esModule", { value: !0 });
 ge.isCollapsedWhitespaces = _n;
 function _n(e) {
@@ -559,7 +559,7 @@ function _n(e) {
   Object.defineProperty(e, "isCollapsedWhitespaces", { enumerable: !0, get: function() {
     return t.isCollapsedWhitespaces;
   } });
-})(Je);
+})(Ve);
 var ve = {}, be = {};
 Object.defineProperty(be, "__esModule", { value: !0 });
 be.isElement = In;
@@ -574,7 +574,7 @@ function In(e) {
     return t.isElement;
   } });
 })(ve);
-var Qe = {}, ye = {}, Ce = {}, Se = {};
+var Ye = {}, ye = {}, Ce = {}, Se = {};
 Object.defineProperty(Se, "__esModule", { value: !0 });
 Se.isLeaf = wn;
 function wn(e) {
@@ -589,11 +589,11 @@ function wn(e) {
 })(Ce);
 var Oe = {}, ke = {};
 Object.defineProperty(ke, "__esModule", { value: !0 });
-ke.isNodeEmpty = Mn;
-var Pn = W, jn = ve, Tn = _, Ln = D;
-function Mn(e, t) {
+ke.isNodeEmpty = Ln;
+var Pn = W, jn = ve, Tn = _, Mn = D;
+function Ln(e, t) {
   var n = "";
-  return (0, Ln.isSingleTag)(e) && !(0, Pn.isLineBreakTag)(e) ? !1 : ((0, jn.isElement)(e) && (0, Tn.isNativeInput)(e) ? n = e.value : e.textContent !== null && (n = e.textContent.replace("​", "")), t !== void 0 && (n = n.replace(new RegExp(t, "g"), "")), n.trim().length === 0);
+  return (0, Mn.isSingleTag)(e) && !(0, Pn.isLineBreakTag)(e) ? !1 : ((0, jn.isElement)(e) && (0, Tn.isNativeInput)(e) ? n = e.value : e.textContent !== null && (n = e.textContent.replace("​", "")), t !== void 0 && (n = n.replace(new RegExp(t, "g"), "")), n.trim().length === 0);
 }
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 }), e.isNodeEmpty = void 0;
@@ -623,8 +623,8 @@ function $n(e, t) {
   Object.defineProperty(e, "isEmpty", { enumerable: !0, get: function() {
     return t.isEmpty;
   } });
-})(Qe);
-var Ze = {}, _e = {};
+})(Ye);
+var Je = {}, _e = {};
 Object.defineProperty(_e, "__esModule", { value: !0 });
 _e.isFragment = Wn;
 var Bn = le;
@@ -637,8 +637,8 @@ function Wn(e) {
   Object.defineProperty(e, "isFragment", { enumerable: !0, get: function() {
     return t.isFragment;
   } });
-})(Ze);
-var xe = {}, Ee = {};
+})(Je);
+var Qe = {}, Ee = {};
 Object.defineProperty(Ee, "__esModule", { value: !0 });
 Ee.isHTMLString = Hn;
 var Dn = B;
@@ -652,8 +652,8 @@ function Hn(e) {
   Object.defineProperty(e, "isHTMLString", { enumerable: !0, get: function() {
     return t.isHTMLString;
   } });
-})(xe);
-var et = {}, Ie = {};
+})(Qe);
+var Ze = {}, Ie = {};
 Object.defineProperty(Ie, "__esModule", { value: !0 });
 Ie.offset = Fn;
 function Fn(e) {
@@ -671,8 +671,8 @@ function Fn(e) {
   Object.defineProperty(e, "offset", { enumerable: !0, get: function() {
     return t.offset;
   } });
-})(et);
-var tt = {}, we = {};
+})(Ze);
+var xe = {}, we = {};
 Object.defineProperty(we, "__esModule", { value: !0 });
 we.prepend = Rn;
 function Rn(e, t) {
@@ -686,7 +686,7 @@ function Rn(e, t) {
   Object.defineProperty(e, "prepend", { enumerable: !0, get: function() {
     return t.prepend;
   } });
-})(tt);
+})(xe);
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 }), e.prepend = e.offset = e.make = e.isLineBreakTag = e.isSingleTag = e.isNodeEmpty = e.isLeaf = e.isHTMLString = e.isFragment = e.isEmpty = e.isElement = e.isContentEditable = e.isCollapsedWhitespaces = e.findAllInputs = e.isNativeInput = e.allInputsSelector = e.getDeepestNode = e.getDeepestBlockElements = e.getContentLength = e.fragmentToString = e.containsOnlyInlineElements = e.canSetCaret = e.calculateBaseline = e.blockElements = e.append = void 0;
   var t = V;
@@ -697,7 +697,7 @@ function Rn(e, t) {
   Object.defineProperty(e, "isNativeInput", { enumerable: !0, get: function() {
     return n.isNativeInput;
   } });
-  var r = He;
+  var r = We;
   Object.defineProperty(e, "append", { enumerable: !0, get: function() {
     return r.append;
   } });
@@ -705,11 +705,11 @@ function Rn(e, t) {
   Object.defineProperty(e, "blockElements", { enumerable: !0, get: function() {
     return i.blockElements;
   } });
-  var a = Fe;
+  var a = De;
   Object.defineProperty(e, "calculateBaseline", { enumerable: !0, get: function() {
     return a.calculateBaseline;
   } });
-  var l = Re;
+  var l = He;
   Object.defineProperty(e, "canSetCaret", { enumerable: !0, get: function() {
     return l.canSetCaret;
   } });
@@ -717,11 +717,11 @@ function Rn(e, t) {
   Object.defineProperty(e, "containsOnlyInlineElements", { enumerable: !0, get: function() {
     return s.containsOnlyInlineElements;
   } });
-  var o = ze;
+  var o = qe;
   Object.defineProperty(e, "fragmentToString", { enumerable: !0, get: function() {
     return o.fragmentToString;
   } });
-  var u = Ke;
+  var u = Ue;
   Object.defineProperty(e, "getContentLength", { enumerable: !0, get: function() {
     return u.getContentLength;
   } });
@@ -729,15 +729,15 @@ function Rn(e, t) {
   Object.defineProperty(e, "getDeepestBlockElements", { enumerable: !0, get: function() {
     return c.getDeepestBlockElements;
   } });
-  var h = Ge;
+  var h = Ke;
   Object.defineProperty(e, "getDeepestNode", { enumerable: !0, get: function() {
     return h.getDeepestNode;
   } });
-  var g = Ye;
+  var g = Ge;
   Object.defineProperty(e, "findAllInputs", { enumerable: !0, get: function() {
     return g.findAllInputs;
   } });
-  var C = Je;
+  var C = Ve;
   Object.defineProperty(e, "isCollapsedWhitespaces", { enumerable: !0, get: function() {
     return C.isCollapsedWhitespaces;
   } });
@@ -745,49 +745,49 @@ function Rn(e, t) {
   Object.defineProperty(e, "isContentEditable", { enumerable: !0, get: function() {
     return E.isContentEditable;
   } });
-  var ot = ve;
+  var lt = ve;
   Object.defineProperty(e, "isElement", { enumerable: !0, get: function() {
-    return ot.isElement;
+    return lt.isElement;
+  } });
+  var st = Ye;
+  Object.defineProperty(e, "isEmpty", { enumerable: !0, get: function() {
+    return st.isEmpty;
+  } });
+  var ot = Je;
+  Object.defineProperty(e, "isFragment", { enumerable: !0, get: function() {
+    return ot.isFragment;
   } });
   var ut = Qe;
-  Object.defineProperty(e, "isEmpty", { enumerable: !0, get: function() {
-    return ut.isEmpty;
-  } });
-  var ct = Ze;
-  Object.defineProperty(e, "isFragment", { enumerable: !0, get: function() {
-    return ct.isFragment;
-  } });
-  var dt = xe;
   Object.defineProperty(e, "isHTMLString", { enumerable: !0, get: function() {
-    return dt.isHTMLString;
+    return ut.isHTMLString;
   } });
-  var ft = Ce;
+  var ct = Ce;
   Object.defineProperty(e, "isLeaf", { enumerable: !0, get: function() {
-    return ft.isLeaf;
+    return ct.isLeaf;
   } });
-  var pt = Oe;
+  var dt = Oe;
   Object.defineProperty(e, "isNodeEmpty", { enumerable: !0, get: function() {
-    return pt.isNodeEmpty;
+    return dt.isNodeEmpty;
   } });
-  var ht = W;
+  var ft = W;
   Object.defineProperty(e, "isLineBreakTag", { enumerable: !0, get: function() {
-    return ht.isLineBreakTag;
+    return ft.isLineBreakTag;
   } });
-  var mt = D;
+  var pt = D;
   Object.defineProperty(e, "isSingleTag", { enumerable: !0, get: function() {
-    return mt.isSingleTag;
+    return pt.isSingleTag;
   } });
-  var gt = B;
+  var ht = B;
   Object.defineProperty(e, "make", { enumerable: !0, get: function() {
-    return gt.make;
+    return ht.make;
   } });
-  var vt = et;
+  var mt = Ze;
   Object.defineProperty(e, "offset", { enumerable: !0, get: function() {
-    return vt.offset;
+    return mt.offset;
   } });
-  var bt = tt;
+  var gt = xe;
   Object.defineProperty(e, "prepend", { enumerable: !0, get: function() {
-    return bt.prepend;
+    return gt.prepend;
   } });
 })(d);
 const m = "cdx-list", p = {
@@ -956,15 +956,15 @@ function Xn(e, t, n, r) {
     return t.checkContenteditableSliceForEmptiness;
   } });
 })(Pe);
-var nt = {};
+var et = {};
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 }), e.getContenteditableSlice = void 0;
   var t = F;
   Object.defineProperty(e, "getContenteditableSlice", { enumerable: !0, get: function() {
     return t.getContenteditableSlice;
   } });
-})(nt);
-var rt = {}, je = {};
+})(et);
+var tt = {}, je = {};
 Object.defineProperty(je, "__esModule", { value: !0 });
 je.focus = Vn;
 var Gn = d;
@@ -1004,7 +1004,7 @@ function Vn(e, t) {
   Object.defineProperty(e, "focus", { enumerable: !0, get: function() {
     return t.focus;
   } });
-})(rt);
+})(tt);
 var Te = {}, R = {};
 Object.defineProperty(R, "__esModule", { value: !0 });
 R.getCaretNodeAndOffset = Yn;
@@ -1022,7 +1022,7 @@ function Yn() {
     return t.getCaretNodeAndOffset;
   } });
 })(Te);
-var it = {}, q = {};
+var nt = {}, q = {};
 Object.defineProperty(q, "__esModule", { value: !0 });
 q.getRange = Jn;
 function Jn() {
@@ -1035,50 +1035,50 @@ function Jn() {
   Object.defineProperty(e, "getRange", { enumerable: !0, get: function() {
     return t.getRange;
   } });
-})(it);
-var at = {}, Le = {};
-Object.defineProperty(Le, "__esModule", { value: !0 });
-Le.isCaretAtEndOfInput = xn;
-var We = d, Qn = Te, Zn = Pe;
+})(nt);
+var rt = {}, Me = {};
+Object.defineProperty(Me, "__esModule", { value: !0 });
+Me.isCaretAtEndOfInput = xn;
+var $e = d, Qn = Te, Zn = Pe;
 function xn(e) {
-  var t = (0, We.getDeepestNode)(e, !0);
+  var t = (0, $e.getDeepestNode)(e, !0);
   if (t === null)
     return !0;
-  if ((0, We.isNativeInput)(t))
+  if ((0, $e.isNativeInput)(t))
     return t.selectionEnd === t.value.length;
   var n = (0, Qn.getCaretNodeAndOffset)(), r = n[0], i = n[1];
   return r === null ? !1 : (0, Zn.checkContenteditableSliceForEmptiness)(e, r, i, "right");
 }
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 }), e.isCaretAtEndOfInput = void 0;
-  var t = Le;
+  var t = Me;
   Object.defineProperty(e, "isCaretAtEndOfInput", { enumerable: !0, get: function() {
     return t.isCaretAtEndOfInput;
   } });
-})(at);
-var lt = {}, Me = {};
-Object.defineProperty(Me, "__esModule", { value: !0 });
-Me.isCaretAtStartOfInput = nr;
-var L = d, er = R, tr = H;
+})(rt);
+var it = {}, Le = {};
+Object.defineProperty(Le, "__esModule", { value: !0 });
+Le.isCaretAtStartOfInput = nr;
+var M = d, er = R, tr = H;
 function nr(e) {
-  var t = (0, L.getDeepestNode)(e);
-  if (t === null || (0, L.isEmpty)(e))
+  var t = (0, M.getDeepestNode)(e);
+  if (t === null || (0, M.isEmpty)(e))
     return !0;
-  if ((0, L.isNativeInput)(t))
+  if ((0, M.isNativeInput)(t))
     return t.selectionEnd === 0;
-  if ((0, L.isEmpty)(e))
+  if ((0, M.isEmpty)(e))
     return !0;
   var n = (0, er.getCaretNodeAndOffset)(), r = n[0], i = n[1];
   return r === null ? !1 : (0, tr.checkContenteditableSliceForEmptiness)(e, r, i, "left");
 }
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 }), e.isCaretAtStartOfInput = void 0;
-  var t = Me;
+  var t = Le;
   Object.defineProperty(e, "isCaretAtStartOfInput", { enumerable: !0, get: function() {
     return t.isCaretAtStartOfInput;
   } });
-})(lt);
-var st = {}, Ne = {};
+})(it);
+var at = {}, Ne = {};
 Object.defineProperty(Ne, "__esModule", { value: !0 });
 Ne.save = ar;
 var rr = d, ir = q;
@@ -1098,18 +1098,18 @@ function ar() {
   Object.defineProperty(e, "save", { enumerable: !0, get: function() {
     return t.save;
   } });
-})(st);
+})(at);
 (function(e) {
   Object.defineProperty(e, "__esModule", { value: !0 }), e.save = e.isCaretAtStartOfInput = e.isCaretAtEndOfInput = e.getRange = e.getCaretNodeAndOffset = e.focus = e.getContenteditableSlice = e.checkContenteditableSliceForEmptiness = void 0;
   var t = Pe;
   Object.defineProperty(e, "checkContenteditableSliceForEmptiness", { enumerable: !0, get: function() {
     return t.checkContenteditableSliceForEmptiness;
   } });
-  var n = nt;
+  var n = et;
   Object.defineProperty(e, "getContenteditableSlice", { enumerable: !0, get: function() {
     return n.getContenteditableSlice;
   } });
-  var r = rt;
+  var r = tt;
   Object.defineProperty(e, "focus", { enumerable: !0, get: function() {
     return r.focus;
   } });
@@ -1117,19 +1117,19 @@ function ar() {
   Object.defineProperty(e, "getCaretNodeAndOffset", { enumerable: !0, get: function() {
     return i.getCaretNodeAndOffset;
   } });
-  var a = it;
+  var a = nt;
   Object.defineProperty(e, "getRange", { enumerable: !0, get: function() {
     return a.getRange;
   } });
-  var l = at;
+  var l = rt;
   Object.defineProperty(e, "isCaretAtEndOfInput", { enumerable: !0, get: function() {
     return l.isCaretAtEndOfInput;
   } });
-  var s = lt;
+  var s = it;
   Object.defineProperty(e, "isCaretAtStartOfInput", { enumerable: !0, get: function() {
     return s.isCaretAtStartOfInput;
   } });
-  var o = st;
+  var o = at;
   Object.defineProperty(e, "save", { enumerable: !0, get: function() {
     return o.save;
   } });
@@ -1182,7 +1182,7 @@ class f {
       innerHTML: t,
       contentEditable: (!this.readOnly).toString()
     }), a = d.make("span", f.CSS.checkbox), l = d.make("div", f.CSS.checkboxContainer);
-    return n.checked === !0 && l.classList.add(f.CSS.itemChecked), a.innerHTML = yt, l.appendChild(a), r.appendChild(l), r.appendChild(i), r;
+    return n.checked === !0 && l.classList.add(f.CSS.itemChecked), a.innerHTML = vt, l.appendChild(a), r.appendChild(l), r.appendChild(i), r;
   }
   /**
    * Return the item content
@@ -1726,7 +1726,7 @@ const P = /* @__PURE__ */ new Map([
    * Value that represents upper alpha characters for counters
    */
   ["Upper Alpha", "upper-alpha"]
-]), De = /* @__PURE__ */ new Map([
+]), Be = /* @__PURE__ */ new Map([
   /**
    * Value that represents Icon for Numeric counter type
    */
@@ -1809,22 +1809,7 @@ class G {
    * title - title to show in toolbox
    */
   static get toolbox() {
-    return [
-      {
-        icon: Ae,
-        title: "Unordered List",
-        data: {
-          style: "unordered"
-        }
-      },
-      {
-        icon: $e,
-        title: "Ordered List",
-        data: {
-          style: "ordered"
-        }
-      }
-    ];
+    return [];
   }
   /**
    * On paste sanitzation config. Allow only tags that are allowed in the Tool.
@@ -1928,7 +1913,7 @@ class G {
     const t = [
       {
         label: this.api.i18n.t("Unordered"),
-        icon: Ae,
+        icon: yt,
         closeOnActivate: !0,
         isActive: this.listStyle == "unordered",
         onActivate: () => {
@@ -1937,7 +1922,7 @@ class G {
       },
       {
         label: this.api.i18n.t("Ordered"),
-        icon: $e,
+        icon: Ct,
         closeOnActivate: !0,
         isActive: this.listStyle == "ordered",
         onActivate: () => {
@@ -1947,7 +1932,7 @@ class G {
     ];
     if (((n = this.config) == null ? void 0 : n.checklists) === !0 && t.push({
       label: this.api.i18n.t("Checklist"),
-      icon: Ct,
+      icon: bt,
       closeOnActivate: !0,
       isActive: this.listStyle == "checklist",
       onActivate: () => {
@@ -1980,7 +1965,7 @@ class G {
         }
       ], l = {
         label: this.api.i18n.t("Counter type"),
-        icon: De.get(this.data.meta.counterType),
+        icon: Be.get(this.data.meta.counterType),
         children: {
           items: []
         }
@@ -1989,7 +1974,7 @@ class G {
         const u = P.get(o);
         this.defaultCounterTypes.includes(u) && l.children.items.push({
           title: this.api.i18n.t(o),
-          icon: De.get(u),
+          icon: Be.get(u),
           isActive: this.data.meta.counterType === P.get(o),
           closeOnActivate: !0,
           onActivate: () => {
